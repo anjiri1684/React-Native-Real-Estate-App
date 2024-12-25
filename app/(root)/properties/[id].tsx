@@ -1,10 +1,15 @@
 import { useLocalSearchParams } from "expo-router";
 import React from "react";
+import { View, Text } from "react-native";
 
 function Property() {
   const { id } = useLocalSearchParams();
 
-  return <div>Property {id}</div>;
+  return (
+    <View>
+      <Text>Property {id}</Text>
+    </View>
+  );
 }
 
 export default Property;
